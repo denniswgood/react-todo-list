@@ -5,7 +5,7 @@ class TodoList extends Component {
     return (
       <div className="todoListMain">
         <div className="header">
-          <form>
+          <form onSubmit={this.addItem}>
             <input placeholder="enter task"></input>
             <button type="submit">add</button>
           </form>
